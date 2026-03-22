@@ -1,7 +1,3 @@
 """
-Medical Trial Simulator - LLM 客户端模块
+Medical Trial Simulator - 医保费用审判模拟器
 """
-
-from .llm_client import LLMClient, LLMResponse, create_client
-
-__all__ = ["LLMClient", "LLMResponse", "create_client"]

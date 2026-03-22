@@ -19,10 +19,20 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Virtual environments
 venv/
 .venv/
 ENV/
 env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Testing
 .pytest_cache/
@@ -30,26 +40,18 @@ env/
 htmlcov/
 .tox/
 
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Environment
-.env
-.env.local
+# Type checking
+.mypy_cache/
+.ruff_cache/
+.ruff.toml
 
 # Logs
 logs/
 *.log
 
 # Data
-data/output/
-data/cache/
-*.csv
-*.json
+data/*.json
+!data/*.json.example
 
 # OS
 .DS_Store
@@ -57,3 +59,5 @@ Thumbs.db
 
 # Project specific
 score.json
+*.tmp
+*.temp
